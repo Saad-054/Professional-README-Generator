@@ -61,3 +61,15 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data);
 }
+
+function init() {
+    inquirer.prompt(questions)
+    .them(answers =>) {
+        const markdown = generateMarkdown(answers);
+        writeToFile("README.md", markdown");
+        console.log("README.md successfully generated!");
+    })
+    .catch(error => console.error(error));
+}
+
+init();
