@@ -1,12 +1,10 @@
 # Personal-Portfolio
 ## Description
-My motivation for creating the JavaScript code for the Console-Finances task was to analyze a dataset containing financial records with Date and Profit/Losses fields. By writing this code, I aimed to calculate various important financial metrics to gain insights into the dataset.
+As a junior web developer, my motivation for creating this command-line application for generating professional README files stems from my own experiences with open source projects on GitHub. I often found it challenging to create comprehensive and well-structured README files, as it can be time-consuming and distracting from the actual coding work. Recognizing this common struggle, I saw an opportunity to streamline the README creation process and make it more accessible for developers of all skill levels. A well-crafted README is crucial for project visibility and collaboration, so I aimed to provide a tool that would help developers present their work effectively and professionally.
 
-The task involved calculating the total number of months in the dataset, finding the net total amount of Profit/Losses over the entire period, and determining the average of the changes in Profit/Losses throughout the dataset. I was also required to track the monthly changes in profits and find the average change using this information.
+To tackle this task, I leveraged Node.js and the Inquirer package to create a command-line application that prompts users for essential information about their project. I carefully designed the prompts to cover key sections of a high-quality README, including project description, installation instructions, usage details, contribution guidelines, test instructions, and more. Additionally, I incorporated options for users to select a license, which automatically adds the corresponding badge and notice to the README. By organizing the user's input into structured markdown content, the application ensures that the generated README is easy to read and navigate.
 
-Additionally, I was determined to identify the greatest increase in profits (with the corresponding date) and the greatest decrease in losses (also with the corresponding date) over the entire period of financial data.
-
-By undertaking this challenge and creating the JavaScript code, I sought to demonstrate my proficiency in handling financial data and applying analytical skills using JavaScript. I also aimed to provide an organized and insightful analysis, displaying the results in a clear and user-friendly manner within the browser, similar to the example provided in the task description. Overall, my motivation was to showcase my ability to extract valuable financial insights from a dataset and present them effectively through JavaScript programming.
+While developing this application, I gained valuable insights into several aspects of web development. Firstly, I honed my skills in working with Node.js, understanding how to create a command-line interface and handle user input. Additionally, I deepened my knowledge of markdown syntax, which is essential for crafting well-structured README files. Most importantly, this project reinforced the significance of documentation and user experience in software development. A well-documented project is more likely to attract collaborators and users, highlighting the importance of clear and concise communication within the developer community. Overall, this experience has not only enhanced my technical abilities but also underscored the collaborative and community-oriented nature of open source development.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,15 +16,16 @@ By undertaking this challenge and creating the JavaScript code, I sought to demo
 ## Installation
 - produce a reospiteory on GitHUB
 - cloned the repository on my Desktop using the SSH Key
-- Customised the content of the website by adding JavaScript
-## Usage
-![website_image](./Console.JPG)
+- Used javascript to create js file for producing README
+
+
 
 ## Credits
 There were no collaborators for this project.
 
 ## Link
-https://saad-054.github.io/Console-Finances/
+![Video](./assets/Video%20Demonstartion.mp4)
+![Video](./assets/Video%20Demonstartion.webm)
 
 ## License
 MIT License
