@@ -1,8 +1,10 @@
+// constants for importing Node.js modules and generateMarkdown
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// Questions Array whihc will be asked to form input for generated README
 const questions = [
     {
         type: "input",
@@ -58,18 +60,25 @@ const questions = [
     }
 ];
 
+// function to write data to a file with a specific filename
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data);
 }
 
+// function for initialsiing README process
 function init() {
+    // prompts user with question and handles the answers
     inquirer.prompt(questions)
     .then(answers => {
+        // generates the markdown content based on user anwers
         const markdown = generateMarkdown(answers);
+        // puts README title in output folder
         writeToFile("./Output/README.md", markdown);
+        // notification of successful README file production
         console.log("README.md successfully generated!");
     })
     .catch(error => console.error(error));
 }
 
+// init function allows the README generation process to start
 init();
