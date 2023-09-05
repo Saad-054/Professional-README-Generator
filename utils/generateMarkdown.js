@@ -1,3 +1,4 @@
+// function to allow for markdown content for README to be produced based on user input
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -36,5 +37,5 @@ For additional questions, you can reach me through:
 - Email: [${data.email}](mailto:${data.email})
  `;
   }
-
+// exports the generateMarkdown function for use in other modules.
   module.exports = generateMarkdown;
